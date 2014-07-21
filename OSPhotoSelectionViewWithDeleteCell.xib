@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="REUSE_OS_PHOTOSELECTIONVIEWWITHDELETE_CELL" id="v2p-l3-oQE" customClass="OSPhotoSelectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="86" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="86" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g5s-iL-b1M">
+                        <rect key="frame" x="10" y="10" width="66" height="63"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nft-Yn-01d">
+                        <rect key="frame" x="53" y="1" width="35" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="3r7-bD-QGC"/>
+                            <constraint firstAttribute="height" constant="25" id="Hfj-Rs-dyP"/>
+                        </constraints>
+                        <state key="normal" image="deletePhoto">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="cmDelete:" destination="v2p-l3-oQE" eventType="touchUpInside" id="1ed-j5-ANv"/>
+                        </connections>
+                    </button>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vy6-Rx-cVZ">
+                        <rect key="frame" x="25" y="23" width="37" height="37"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </activityIndicatorView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="g5s-iL-b1M" secondAttribute="bottom" constant="10" id="1Ra-0j-wvf"/>
+                <constraint firstItem="g5s-iL-b1M" firstAttribute="top" secondItem="v2p-l3-oQE" secondAttribute="top" constant="10" id="2LC-Jk-k0s"/>
+                <constraint firstItem="Nft-Yn-01d" firstAttribute="top" secondItem="v2p-l3-oQE" secondAttribute="top" constant="1" id="3pT-Ae-IZR"/>
+                <constraint firstAttribute="trailing" secondItem="Nft-Yn-01d" secondAttribute="trailing" constant="-2" id="Bd0-Eq-Va5"/>
+                <constraint firstItem="g5s-iL-b1M" firstAttribute="leading" secondItem="v2p-l3-oQE" secondAttribute="leading" constant="10" id="QYc-n6-KLA"/>
+                <constraint firstAttribute="trailing" secondItem="vy6-Rx-cVZ" secondAttribute="trailing" constant="24" id="T1a-85-V9X"/>
+                <constraint firstItem="vy6-Rx-cVZ" firstAttribute="top" secondItem="v2p-l3-oQE" secondAttribute="top" constant="23" id="cqs-vW-UXJ"/>
+                <constraint firstAttribute="bottom" secondItem="vy6-Rx-cVZ" secondAttribute="bottom" constant="23" id="h3v-Xo-mfQ"/>
+                <constraint firstAttribute="trailing" secondItem="g5s-iL-b1M" secondAttribute="trailing" constant="10" id="lng-hb-HB0"/>
+                <constraint firstItem="vy6-Rx-cVZ" firstAttribute="leading" secondItem="v2p-l3-oQE" secondAttribute="leading" constant="25" id="tNF-lw-MEm"/>
+            </constraints>
+            <size key="customSize" width="86" height="83"/>
+            <connections>
+                <outlet property="btnDelete" destination="Nft-Yn-01d" id="CPV-s5-fXQ"/>
+                <outlet property="imgView" destination="g5s-iL-b1M" id="dPM-e3-nRL"/>
+                <outlet property="spinny" destination="vy6-Rx-cVZ" id="4eT-NY-FU7"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="deletePhoto" width="24" height="25"/>
+    </resources>
+</document>
