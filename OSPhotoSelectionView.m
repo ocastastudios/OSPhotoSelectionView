@@ -265,7 +265,7 @@
     [super layoutSubviews];
 }
 
-- (IBAction)cmAddPhoto:(OSButton *)sender
+- (IBAction)cmAddPhoto:(UIButton *)sender
 {
     //show the picker
     
