@@ -9,6 +9,7 @@
 #import "OSPhotoSelectionViewCell.h"
 #import "OSPhotoSelectionView.h"
 #import <QuartzCore/QuartzCore.h>
+#import <UIImageView+AFNetworking>
 
 @interface OSPhotoSelectionViewCell ()
 {

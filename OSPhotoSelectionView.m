@@ -7,7 +7,6 @@
 //
 
 #import "OSPhotoSelectionView.h"
-#import "OSButton.h"
 #import "OSPhotoSelectionViewCell.h"
 #import "OSPhotoSelectionViewPhoto.h"
 
@@ -26,7 +25,7 @@
     
 }
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (weak, nonatomic) IBOutlet OSButton *btnAddPhoto;
+@property (weak, nonatomic) IBOutlet UIButton *btnAddPhoto;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *addButtonHeightConstraint;
 
