@@ -10,6 +10,7 @@
 #import "OSPhotoSelectionView.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIImageView+AFNetworking.h"
+#import "UIAlertView+Localised.h"
 
 @interface OSPhotoSelectionViewCell ()
 {
