@@ -9,6 +9,7 @@
 #import "OSPhotoSelectionView.h"
 #import "OSPhotoSelectionViewCell.h"
 #import "OSPhotoSelectionViewPhoto.h"
+#import "UIView+NibLoading.h"
 
 @interface OSPhotoSelectionView ()
 {
